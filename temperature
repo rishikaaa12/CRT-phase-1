@@ -10,3 +10,19 @@ cout<<fahrenheit<<endl;
 
     return 0;
 }
+
+
+#include <iostream>
+using namespace std;
+//global variable
+int globalVariable = 100;
+int main() {
+    //local variable
+int userInput;
+float result;
+cin >> userInput;
+result = (double)globalVariable / userInput;
+cout << result << endl;
+
+    return 0;
+}
