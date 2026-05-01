@@ -119,3 +119,26 @@ sum = sum + n;
 cout << sum;
 return 0;
 }
+
+// problem 7-- smart lightning system
+#include <iostream>
+using namespace std;
+
+int main() {
+string dayOrNight;
+bool motionDetected;
+cout << "is it Day or Night?";
+cin >> dayOrNight;
+cout << "is Motion Detected? (1 for yes, 0 for no)";
+cin >> motionDetected;
+if (dayOrNight == "Night" || dayOrNight == "night") {
+    if(motionDetected) {
+        cout << "turn on led light with 100% brightness";
+} else {
+    cout << "turn on led light with only 10% brightness";
+}
+} else {
+    cout << "turn off the lights";
+}
+return 0;
+}
