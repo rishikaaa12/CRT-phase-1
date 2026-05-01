@@ -142,3 +142,34 @@ if (dayOrNight == "Night" || dayOrNight == "night") {
 }
 return 0;
 }
+
+// problem 8-- switch statement 
+// customer support IVR system 
+// 1-- for support
+// 2-- for billing
+// 3-- technical issues
+// 4-- talk to agent 
+#include <iostream>
+using namespace std;
+
+int main() {
+int choice ;
+cin >> choice;
+switch(choice) {
+    case 1: 
+    cout << "transferring call to the customer support";
+    break;
+    case 2:
+    cout  << "tranferring call to accounts and billing department";
+     break;
+    case 3:
+    cout << "connecting to technical help desk";
+     break;
+    case 4:
+    cout << "connecting call to the agent";
+     break;
+    default:
+    cout << "Invalid selection, enter a valid number";
+}
+return 0;
+}
