@@ -33,3 +33,5 @@ if (age>=18) {
     //logic
     cout << "not eligible for vote";
 }
+return 0;
+}
