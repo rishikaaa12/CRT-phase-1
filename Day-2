@@ -99,3 +99,23 @@ for (int i = 1; i <= n; i++) {
 cout << "\n";
 return 0;
 }
+
+// problem 6-- break statement 
+//add nos till we get a negative no
+#include <iostream>
+using namespace std;
+
+int main() {
+int n;
+int sum;
+
+while (true) {
+    cin >> n;
+if(n < 0) {
+    break;
+}
+sum = sum + n;
+}
+cout << sum;
+return 0;
+}
