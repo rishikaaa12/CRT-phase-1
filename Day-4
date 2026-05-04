@@ -29,3 +29,19 @@ int main() {
     }
     return 0;
 }
+
+// problem 3 ---
+// print a right angled triangle 
+#include <iostream>
+using namespace std;
+int main() {
+    // no of times to print the pattern 
+    for(int i = 1; i <= 6; i++) {
+        // this defines what to print in the pattern
+        for(int j = 1; j <= i; j++) {
+            cout <<"*";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
