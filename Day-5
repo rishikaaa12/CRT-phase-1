@@ -97,8 +97,8 @@ int main() {
 
 #include <iostream>
 using namespace std;
-int currencyConversion(int amountInUSD) {
-    return amountInUSD / 100;
+int currencyConversion(int amountInINR) {
+    return amountInINR / 100;
 }
 int main() {
   cout <<  currencyConversion(100); 
