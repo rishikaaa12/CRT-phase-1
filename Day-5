@@ -130,3 +130,17 @@ double add(double a , double b) {
    cout << add(5.5,2.0);
    return 0;
 }
+
+// problem-6 --
+//pointers 
+
+#include <iostream>
+using namespace std; 
+
+ int main() {
+     int age = 24;
+     int *ptr = &age; 
+     cout << age <<"\n";
+     cout << ptr << "\n";
+     cout << *ptr;
+ }
