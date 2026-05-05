@@ -20,3 +20,88 @@ int main() {
     }
     return 0;
 }
+
+// problem-2 --
+// function declaration and initialization
+
+#include <iostream>
+using namespace std;
+
+void printMessage() {
+    cout << "Hi we are learning functions ";
+    }
+     int main() {
+         printMessage();
+           return 0;
+     } 
+
+// problem-3 --
+// making a function with argument and return type
+
+#include <iostream>
+using namespace std;
+int area(int a, int b) {
+    return a * b;
+}
+int main() {
+    int length = 10;
+    int width = 5;
+   int areaOfRectangle = area(length, width);
+    cout << areaOfRectangle;
+}
+
+// problem-4 --
+// types of functions 
+// 4.1-- no argument , no return type
+
+#include <iostream>
+using namespace std;
+void DoorBell() {
+    cout << "Ting Tong ";
+}
+int main() {
+    DoorBell();
+    return 0;
+}
+
+// problem-4 --
+// types of functions 
+// 4.2--  argument , no return type
+
+#include <iostream>
+using namespace std;
+void sendText(string message) {
+    cout << message;
+}
+int main() {
+    sendText("BJP WON");
+    return 0;
+}
+
+// problem-4 --
+// types of functions 
+// 4.3-- no argument , return type
+
+#include <iostream>
+using namespace std;
+int ticketNumber() {
+    return 101;
+}
+int main() {
+  cout <<  ticketNumber();
+    return 0;
+}
+  // problem-4 --
+// types of functions 
+// 4.4--  argument , return type
+
+#include <iostream>
+using namespace std;
+int currencyConversion(int amountInUSD) {
+    return amountInUSD / 100;
+}
+int main() {
+  cout <<  currencyConversion(100); 
+        
+    return 0;
+}
