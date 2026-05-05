@@ -142,5 +142,9 @@ using namespace std;
      int *ptr = &age; 
      cout << age <<"\n";
      cout << ptr << "\n";
+     cout << *ptr << "\n";
+     
+     // age = 28
+     *ptr = 28;
      cout << *ptr;
  }
