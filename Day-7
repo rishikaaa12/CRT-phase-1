@@ -1,0 +1,18 @@
+ //problem -1 --
+// access modifiers 
+// 1.1 - public
+
+ #include <iostream>
+using namespace std;
+
+class PublicPark{
+public:
+void enter() {
+cout << "Anyone can enter in the park";
+}
+};
+
+int main() {
+PublicPark p;
+p.enter();
+}
