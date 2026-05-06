@@ -111,3 +111,31 @@ int main() {
 
     return 0;
 }
+
+ //problem- 6--
+// classes and objects
+
+ #include <iostream>
+using namespace std;
+
+class Student {
+public:
+string name;
+int age;
+
+void introduce() {
+    cout << "hi there, this person's name is " << name << " and his age is " << age << "\n";
+}
+};
+    
+
+int main() {
+    Student s1,  s2;
+    s1.name = "Abhishek";
+    s1.age = 24;
+    s2.name = "Aman";
+    s2.age = 23;
+    s1.introduce();
+    s2.introduce();
+}
+
