@@ -20,3 +20,94 @@ cout << a << " " <<b;
 
     return 0;
 }
+
+// problem - 2 --
+// default arguments 
+#include <iostream>
+using namespace std;
+
+int area(int a, int b = 5) {
+    return a * b;
+}
+int main() {
+ cout << area(10);
+    return 0;
+}
+
+// problem - 3 --
+//call by value -- photocopy
+// call by reference -- original copy (address)
+#include <iostream>
+using namespace std;
+
+void updatebyValue(int a) {
+    a = 500;
+}
+void updatebyReference(int &a) {
+    a = 500;
+}
+
+int main() {
+    int original = 100;
+    cout << original << "\n";
+    
+    updatebyValue(original);
+    cout << original << "\n";
+   updatebyReference(original);
+ cout << original;
+    
+    return 0;
+    
+} 
+
+// problem- 4--
+//practice problems  --
+// coffee machine billing system
+ #include <iostream>
+using namespace std;
+
+int main() {
+    int cups;
+    cout << "Enter the number of cups you paid for: ";
+    cin >> cups;
+
+     Calculate the number of free cups
+   int freeCups = cups / 6;
+
+    // Calculate the total number of cups
+    int totalCups = cups + freeCups;
+
+    // Output the result
+    cout << "Total number of cups: " << totalCups << endl;
+
+    return 0;
+}
+
+// problem- 5--
+//practice problems  --
+// smart ac remote system // function overloading // default argument
+
+ #include <iostream>
+using namespace std;
+
+void setTemperature(int temp = 22){
+    cout << "Temperature set to " << temp << "C" << "\n";
+}
+void setTemperature(double temp){
+       cout << "Temperature set to " << temp << "C" << "\n";
+}
+void setTemperature(string mode){
+    if(mode == "ECO") {
+        cout << "Temperature set to 24 C " << "\n";
+} else if(mode == "TURBO") {
+    cout << "Temperature set to 18 C" << "\n";
+}
+}
+int main() {
+   setTemperature(); //default value -- 22
+   setTemperature(20.5); // manually setting the temperature
+   setTemperature("ECO"); // set temperature to 24
+   setTemperature("TURBO"); // set temperature to 18
+
+    return 0;
+}
