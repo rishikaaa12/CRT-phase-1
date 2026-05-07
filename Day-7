@@ -16,3 +16,140 @@ int main() {
 PublicPark p;
 p.enter();
 }
+
+ //problem -2 --
+// access modifiers 
+// 1.2 - private
+
+ #include <iostream>
+using namespace std;
+
+class BankAccount{
+    
+private:
+int Balance = 5000;
+    
+public:
+void showBalance() {
+cout << " Balance in your account is : " << Balance;
+}
+};
+
+int main() {
+BankAccount myaccount;
+myaccount.showBalance();
+}
+
+ //problem -3 --
+// access modifiers 
+// 1.3 - protected
+
+ #include <iostream>
+using namespace std;
+
+class Parent{
+    
+protected:
+int secretCode = 1234;
+};
+
+class Child : public Parent{
+    public:
+    void accessOfSecretCode() {
+        cout << "secretCode of the locker is :" << secretCode;
+    }
+};
+
+int main() {
+Child obj1;
+obj1.accessOfSecretCode();
+}
+
+ //problem - 4 --
+// constructors
+// 4.1 - default 
+
+ #include <iostream>
+using namespace std;
+
+class wifiConnection {
+    public:
+   string networkName;
+string password;
+  
+  // Constructor 
+  wifiConnection() {
+      networkName = "ACTibre";
+      password = "BJP wons";
+  }
+  
+  public:
+  void showDetails() {
+    cout << "Network name is :" << networkName << " and password is:" << password;
+  }
+};
+
+int main() {
+    wifiConnection obj1;
+    obj1.showDetails();
+}
+
+ //problem - 4 --
+// constructors
+// 4.2 - parameterized
+
+ #include <iostream>
+using namespace std;
+
+class Student {
+    public:
+   string name;
+   int id;
+  
+  // Constructor 
+  Student(string studentName , int studentID) {
+     name = studentName;
+     id = studentID;
+     }
+  
+  public:
+  void displayDetails() {
+      cout << name << " " << id;
+  }
+};
+
+int main() {
+Student std1("Abhishek", 101);
+std1.displayDetails();
+}
+
+ //problem - 5 --
+// encapsulation binding of (functions,data,variables,methods)
+
+ #include <iostream>
+using namespace std;
+
+class bankAccount{
+    private:
+    int balance;
+
+public:
+void setBalance(int amount) {
+    if(amount >= 0) {
+        balance = amount;
+    } else {
+        cout << "Enter a valid number" ;
+    }
+}
+
+public:
+int getbalance() {
+    return balance;
+}
+};
+int main() {
+   bankAccount obj1;
+   obj1.setBalance(5000);
+  cout << obj1.getbalance();
+    
+}
