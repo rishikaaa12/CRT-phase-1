@@ -102,3 +102,34 @@ Bike obj2;
  
     return 0;
 }
+
+// problem - 1 --
+// inheritance
+// 1.4 - multiple inheritance 
+
+#include <iostream>
+using namespace std;
+
+class Parent1 {
+    public:
+  void giveMeMoney() {
+        cout << "mum gimme money" << "\n";
+    }
+};
+class Parent2 {
+    public:
+    void giveMeMoney() {
+        cout << "dad gimme money";
+    }
+};
+class child : public Parent1, public Parent2 {
+    // no logic
+};
+
+
+ int main() {
+     child obj1;
+     //obj1.giveMeMoney();
+     obj1.Parent1::giveMeMoney();
+     obj1.Parent2::giveMeMoney();
+ }
