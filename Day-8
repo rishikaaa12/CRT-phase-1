@@ -252,3 +252,25 @@ d.Sound();
 c.Sound();
     
 }
+
+// 6.3 - function overriding (run time)
+
+#include <iostream>
+using namespace std;
+
+class Parent {
+    public:
+    void sum(int a, int b){
+        cout << a+b << "parent";
+    }
+};
+ class child : public Parent{
+    public :
+    void sum(int a, int b) {
+        cout << a+b << "child";
+    }
+ };
+    int main() {
+        child c;
+        c.sum(10,20);
+    }
