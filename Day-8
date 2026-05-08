@@ -1,0 +1,64 @@
+// problem - 1 --
+// inheritance
+// 1.1 - single inheritance 
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public:
+    void start() {
+        cout << "Vehicle starts " << "\n";
+    }
+};
+
+class Car : public Vehicle {
+    public:
+    void drive() {
+        cout << "Car is running " << "\n";
+    }
+};
+
+int main() {
+ Car obj1;
+ obj1.drive();
+ obj1.start();
+
+    return 0;
+}
+
+// problem - 1 --
+// inheritance
+// 1.2 - multi-level inheritance 
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public:
+    void start() {
+        cout << "Vehicle starts " << "\n";
+    }
+};
+
+class Car : public Vehicle {
+    public:
+    void drive() {
+        cout << "Car is running " << "\n";
+    }
+};
+class speedoMeter : public Car {
+    public:
+    void speed() {
+        cout << "Car is running at 60km/hr" << "\n";
+    }
+};
+
+int main() {
+ speedoMeter obj1;
+ obj1.speed();
+ obj1.drive();
+ obj1.start();
+
+    return 0;
+}
