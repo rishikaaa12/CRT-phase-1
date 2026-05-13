@@ -1,0 +1,17 @@
+// problem - 1 ---
+int numberOfWays(int n) {
+    
+    // Base Case
+    if (n<0) return 0;
+    if (n == 0) return 1;
+    
+    int ans = 0;
+    
+    // if one tile is placed vertically
+    ans = numberOfWays(n-1);
+    
+    // if two tiles are placed horizontly.
+    ans += numberOfWays(n-2);
+    
+    return ans;
+}
