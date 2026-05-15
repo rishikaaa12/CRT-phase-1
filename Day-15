@@ -1,1 +1,54 @@
+//problem - 1--
+// #include <iostream>
+#include <stack>
 
+int main() {
+    int arr[] = {10,20,30,40,50};
+    int n = 5;
+    stack<int> st;
+    //push the data into the stack
+    for(int i = 0; i < n; i++){
+        st.push(arr[i]);
+    }
+// pop the data from the stack and put into array back
+for(int i = 0; i < n; i++) {
+    arr[i] = st.top();
+    st.pop();
+}
+cout << "Reversed array" << "\n";
+for(int i = 0; i < n; i++){
+    cout << arr[i] << " ";
+}
+return 0;
+}
+
+// problem - 2
+// leetcode (344)
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+         int l = 0;
+        int r = s.size() - 1;
+ 
+        while (l < r) {
+            swap(s[l], s[r]);
+            l++;
+            r--;
+        }
+    
+    }
+};
+stack<char> st;
+for(int i = 0; i < s.size(); i++) {
+    st.push(s[i]);
+}
+int i = 0;
+while(!st.empty()) {
+    s[i++] = st.top();
+    st.pop();
+}
+    }
+};
+
+// problem-3
+leetcode (344)
