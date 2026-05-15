@@ -72,3 +72,22 @@ public:
        return st.empty();
     }
 };
+
+// problem-4
+class Solution {
+  public:
+    vector<int> nextLargerElement(vector<int>& arr) {
+        int n = arr.size();
+        vector<int> (res n, -1) {
+            
+            for(i = 0, i < n, i++) 
+        for(j = i+1, j < n, j++) {
+            
+             arr([j] > arr[i]) {
+             res[i] = res[j];    
+             }
+             
+        }
+        }      
+    }
+};
